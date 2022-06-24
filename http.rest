@@ -1,0 +1,29 @@
+POST  http://localhost:5000/
+Content-Type: application/json
+
+{
+    "taskname": "Go see a movie",
+    "username": "Sarah",
+    "completionDate": "2022-10-24",
+    "completionTime": "18:00"
+}
+
+###
+GET  http://localhost:5000/
+
+
+###
+PUT  http://localhost:5000/update/62b3b6d018c6432b3331ad1b
+Content-Type: application/json
+
+{
+    "taskname": "Go to the Grocery Store",
+    "username": "Sarah",
+    "completionDate": "2022-10-24",
+    "completionTime": "18:00"
+}
+
+
+###
+DELETE http://localhost:5000/task-delete/62b3b6d018c6432b3331ad1b
+
